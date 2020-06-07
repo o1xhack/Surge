@@ -3,7 +3,7 @@
 #!system=ios
 [General]
 # > 优酷 去广告
-force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
+// force-http-engine-hosts = %APPEND% vali.cp31.ott.cibntv.net
 
 [Rule]
 # > 京东  去启动广告
@@ -28,7 +28,7 @@ AND,((USER-AGENT,ZhihuHybrid*), (URL-REGEX,.*recommend)),REJECT
 AND,((USER-AGENT,PUClient*), (NOT,((DOMAIN-SUFFIX,rr.tv)))),REJECT
 URL-REGEX,^https?:\/\/api\.rr\.tv\/(?:ad\/getAll$|storage/business/rootName/app/homePage),REJECT
 # > 优酷 去广告
-URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
+// URL-REGEX,^http:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 # > 爱美剧 去广告
 URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/pay/ok$ ,REJECT-TINYGIF
 URL-REGEX,^http(s)://api.bjxkhc.com/index.php/app/ios/ver/index_ios$,REJECT
